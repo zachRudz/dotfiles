@@ -1,5 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# ~/.bashrc: executed by bash(1) for non-login shells.  # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 # If not running interactively, don't do anything
@@ -116,5 +115,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Fix our path so that we can access our scripts without specifying the dir
+PATH="${PATH}:/home/zach/myscripts"
+
 # Config backup via git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Common aliases
+alias py=python3.5

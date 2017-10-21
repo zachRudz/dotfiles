@@ -160,3 +160,6 @@ bar {
 # Picture in picture
 bindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky enable; move window to position 1310 16
 bindsym $mod+Shift+y floating disable; sticky disable
+
+# Lockscreen
+bindsym $mod+ctrl+x exec $HOME/myscripts/lock
