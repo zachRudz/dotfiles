@@ -162,4 +162,4 @@ bindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky e
 bindsym $mod+Shift+y floating disable; sticky disable
 
 # Lockscreen
-bindsym $mod+ctrl+x exec $HOME/myscripts/lock
+bindsym ctrl+Mod1+l exec $HOME/myscripts/lock
