@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+icon="$HOME/.config/i3/lockIcon.png"
+tmpbg='/tmp/screen.png'
+
+(( $# )) && { icon=$1; }
+
+# Take a screenshot of the display, and blur it via pixilization.
+scrot "$tmpbg"
+convert "$tmpbg" -scale 10% -scale 1000% "$tmpbg"
+#convert "$tmpbg" "$icon" -gravity center -composite -matte "$tmpbg"
+
+# -e: Ignore empty password
+# -f: Show failed attempts
+# -d: Enable dpms (turn off the screen when locked)
+# -i: Use image file of the blurred screen
+i3lock -efd -i "$tmpbg"
