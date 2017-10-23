@@ -14,7 +14,8 @@ general {
 #order += "ipv6"
 order += "disk /"
 order += "run_watch DHCP"
-order += "run_watch VPN"
+#order += "run_watch VPN"
+order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery 0"
@@ -40,8 +41,13 @@ run_watch DHCP {
         pidfile = "/var/run/dhclient*.pid"
 }
 
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
+#run_watch VPN {
+#        pidfile = "/var/run/vpnc/pid"
+#}
+
+path_exists VPN {
+	# path exists when a VPN tunnel launched by nmcli/nm-applet is active
+	path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 tztime local {
