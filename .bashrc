@@ -119,10 +119,15 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Fix our path so that we can access our scripts without specifying the dir
-PATH="${PATH}:/home/zach/myscripts"
+export PATH="${PATH}:/home/zach/myscripts"
 
 # Config backup via git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Common aliases
 alias py=python3.5
+
+# Clipboard
+alias setclip='xclip -selection c'
+alias getclip='xclip -selection clipboard -o'
+

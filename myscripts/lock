@@ -7,7 +7,8 @@ tmpbg='/tmp/screen.png'
 
 # Take a screenshot of the display, and blur it via pixilization.
 scrot "$tmpbg"
-convert "$tmpbg" -scale 10% -scale 1000% "$tmpbg"
+#convert "$tmpbg" -scale 10% -scale 1000% "$tmpbg"
+convert "$tmpbg" -scale 1% -scale 10000% "$tmpbg"
 #convert "$tmpbg" "$icon" -gravity center -composite -matte "$tmpbg"
 
 # -e: Ignore empty password
