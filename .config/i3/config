@@ -166,6 +166,8 @@ bar {
         tray_output primary
 }
 
+# Run nautilus on mod+n
+bindsym $mod+n exec nautilus
 
 # Picture in picture
 bindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky enable; move window to position 1310 16
