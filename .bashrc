@@ -118,9 +118,6 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# Fix our path so that we can access our scripts without specifying the dir
-export PATH="${PATH}:/home/zach/myscripts"
-
 # Config backup via git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
