@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# -- About --
+# This script acts as a frontend to the feh background configuration tool.
+
+# -- Usage --
+# Set a specific file as the background
+# $0 -f [file]
+# 
+# Set a random file in the specified directory as the background
+# $0 -d [file]
+
+show_help () {
+	echo "Usage: $0 [-f location_of_file]"
+	echo "Usage: $0 [-d location_of_directory]"
+}
+
+
+
+# -- Entry point --
+# Check the usage
+if [ $# != 2 ]; then
+	show_help
+	exit 1
+fi
+
+# Loop through possible parameters
+while getopts "hfd?" opt; do
+	case "$opt" in 
+		h?)
+			show_help
+			exit 1
+			;;
+
+		# Random file in a directory
+		d)
+			cd "$2"
+			file=`ls $2 | sort -R | head -n 1`
+			feh --bg-scale "$file"
+			exit 0
+			;;
+
+		# Specific file
+		f) 
+			feh --bg-scale "$2"
+			exit 0
+			;;
+	esac
+done
