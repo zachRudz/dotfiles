@@ -23,3 +23,13 @@ nnoremap k gk
 nnoremap B ^        " Move to beginning/end of line
 nnoremap E $
 inoremap jk <esc> " Remap "jk" to enter command mode
+
+" Paste toggle
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+" Numbers toggle
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
+
