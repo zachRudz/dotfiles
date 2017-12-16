@@ -222,8 +222,10 @@ mode "background" {
         bindsym 0 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/"
         bindsym 1 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/other"
         bindsym 2 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/nature"
-        bindsym 3 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/video_game"
-        bindsym 4 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/women"
+        bindsym 3 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/art_landscapes"
+        bindsym 4 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/video_game"
+        bindsym 5 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/women"
+        bindsym 6 exec ~/bin/setBackground -d "$HOME/Images/Backgrounds/feh_target/anime"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
