@@ -185,7 +185,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace_social
 # Assigning certain windows to specific workspaces
 assign [class="vlc"] $workspace_video
 assign [class="Thunderbird"] $workspace_social
-assign [class="Chromium-browser"] $workspace_social
+assign [class="signal"] $workspace_social
 assign [class="Messenger for Desktop"] $workspace_social
 
 
