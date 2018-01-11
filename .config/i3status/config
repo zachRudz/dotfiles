@@ -12,8 +12,8 @@ general {
 }
 
 #order += "ipv6"
-order += "disk /"
-order += "run_watch DHCP"
+#order += "disk /"
+#order += "run_watch DHCP"
 #order += "run_watch VPN"
 order += "path_exists VPN"
 order += "wireless _first_"

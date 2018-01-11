@@ -127,4 +127,3 @@ alias py=python3.5
 # Clipboard
 alias setclip='xclip -selection c'
 alias getclip='xclip -selection clipboard -o'
-
