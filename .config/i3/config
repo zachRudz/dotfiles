@@ -37,6 +37,9 @@ font pango:monospace 8
 bar {
         status_command i3status
         tray_output primary
+
+		wheel_up_cmd nop
+		wheel_down_cmd nop
 }
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
