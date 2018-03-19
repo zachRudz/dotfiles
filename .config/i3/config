@@ -50,7 +50,7 @@ bar {
 bindsym $mod+d exec dmenu_run
 
 # Run nautilus on mod+n
-bindsym $mod+n exec nautilus
+bindsym $mod+n exec nautilus --no-desktop
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
