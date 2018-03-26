@@ -64,6 +64,9 @@ bindsym ctrl+Mod1+l exec $HOME/bin/lock
 # Run the network manager applet on start
 exec --no-startup-id nm-applet
 
+# Run compton on start
+exec --no-startup-id compton
+
 # Show a calendar on $mod + c
 bindsym $mod+c exec zenity --calendar
 
