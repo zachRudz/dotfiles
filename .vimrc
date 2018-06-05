@@ -3,6 +3,7 @@ colorscheme desert
 syntax enable
 
 " Tabs and such
+set shiftwidth=4	" Width of tabs when indenting via >>, <<, or ==
 set tabstop=4       " Number visual spaces per TAB
 set softtabstop=4   " Number of visual spaces during editing
 set autoindent 
