@@ -170,7 +170,7 @@ bindsym $mod+minus scratchpad show
 # -----------------------------------------------------------------------------
 # -- Workspaces --
 # Workspace variables
-set $workspace_reading "8: Reading"
+set $workspace_system "8: System"
 set $workspace_video "9: Video"
 set $workspace_social "10: Social"
 
@@ -182,7 +182,7 @@ bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace $workspace_reading
+bindsym $mod+8 workspace $workspace_system
 bindsym $mod+9 workspace $workspace_video
 bindsym $mod+0 workspace $workspace_social
 
@@ -194,11 +194,14 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace $workspace_reading
+bindsym $mod+Shift+8 move container to workspace $workspace_system
 bindsym $mod+Shift+9 move container to workspace $workspace_video
 bindsym $mod+Shift+0 move container to workspace $workspace_social
 
 # Assigning certain windows to specific workspaces
+# Note: To find the class, do `xprop`, and look for "WM_CLASS"
+assign [class="keepassxc"] $workspace_system
+assign [class="SpiderOakONE"] $workspace_system
 assign [class="vlc"] $workspace_video
 assign [class="Thunderbird"] $workspace_social
 assign [class="Signal"] $workspace_social
