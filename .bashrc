@@ -122,7 +122,7 @@ export EDITOR="$VISUAL"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Common aliases
-alias py=python3.5
+alias py=python3
 
 # Clipboard
 alias setclip='xclip -selection c'
