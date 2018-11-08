@@ -19,11 +19,14 @@ set incsearch   " Search as characters are typed
 set hlsearch    " Highlight all the searching
 
 " Movement
-nnoremap j gj       " Move vertically by visual line, not by actual line
+" Move vertically by visual line, not by actual line
+nnoremap j gj
 nnoremap k gk
-nnoremap B ^        " Move to beginning/end of line
+" Move to beginning/end of line
+nnoremap B ^
 nnoremap E $
-inoremap jk <esc> " Remap "jk" to enter command mode
+" Remap "jk" to enter command mode
+inoremap jk <esc>
 
 " Paste toggle
 nnoremap <F2> :set invpaste paste?<CR>
